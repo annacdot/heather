@@ -28,11 +28,9 @@ p.info {
 
 .wrapper {
   background-image: url(images/home-mainbg.jpg);
-  /*background-attachment: fixed;*/
-  /*on responsive at certain width*/
   background-position: top right;
   background-repeat: no-repeat;
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -52,7 +50,6 @@ p.bio-large {
 
 p.bio-smaller {
   font-size: 15px;
-  color: grey;
   text-align: justify;
 }
 
@@ -77,7 +74,7 @@ p a {
   -o-transition: color 1.5s;
   transition: color 1.5s;
 }
-a:hover {
+p a:hover {
   color: #A405C4;
 }
 
@@ -298,7 +295,7 @@ a.twitter-logo {
   margin-top: 10px;
   width: 40px;
   height: 45px;
- /* display: inline-block;*/
+  display: inline-block;
   background-image: url(images/icon-footer-twitter-40x45.png);
   text-indent: -999px;
 }
@@ -358,11 +355,11 @@ a.email-logo:hover {
   }
 
   .wrapper {
-    background-image: url(images/home-mainbg-50opacity.jpg);
+    background-image: url(images/home-mainbg-65opacity.jpg);
     background-position: top right;
     background-repeat: no-repeat;
-    width: 85%;
-    margin: 0 auto;
+    background-size: 100%;
+    background-attachment: fixed;
     position: relative;
   }
 
@@ -396,7 +393,8 @@ a.email-logo:hover {
 }
 @media (max-width: 1050px) {
   .wrapper {
-    background-position: top left;
+    background-position: top right;
+    width: 100%;
   }
 
   .heather-flag {
@@ -405,7 +403,10 @@ a.email-logo:hover {
 }
 @media (max-width: 1084px) {
   .wrapper {
-    background-image: url(images/home-mainbg-80opacity.jpg);
+    background-image: url(images/home-mainbg-65opacity.jpg);
+    background-attachment: fixed;
+    background-position: top right;
+    width: 100%;
   }
 
   .content, .nav {
@@ -414,6 +415,11 @@ a.email-logo:hover {
   }
 }
 @media (max-width: 1000px) {
+  .wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .nav ul li {
     font-size: 30px;
     display: inline-block;
@@ -448,7 +454,7 @@ a.email-logo:hover {
   }
 
   .wrapper {
-    width: 90%;
+    width: 100%;
   }
 
   footer {
